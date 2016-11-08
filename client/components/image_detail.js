@@ -16,7 +16,6 @@ const ImageDetail = (props) => {
         <ImageScore ups={props.image.ups} downs={props.image.downs} />
       </div>
     </li>
-
   );
 };
 

@@ -7,7 +7,7 @@ const ImageList = (props) => {
   const validImages = props.images.filter(image => !image.is_album);
 
   const RenderedImages = validImages.map(image =>
-     <ImageDetail key={image.title} image={image} />
+    <ImageDetail key={image.title} image={image} />
   );
 
 

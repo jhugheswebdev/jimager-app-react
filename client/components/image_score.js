@@ -12,9 +12,9 @@ const ImageScore = (props) => {
     <div>
       Ups/Downs
       <div className='progress'>
-      <div style={{ width: upsPercent}} className='progress-bar progress-bar-success progress-bar-striped' />
-      <div style={{ width: downsPercent}} className='progress-bar progress-bar-danger progress-bar-striped' />
-      </div>
+        <div style={{ width: upsPercent}} className='progress-bar progress-bar-success progress-bar-striped' />
+          <div style={{ width: downsPercent}} className='progress-bar progress-bar-danger progress-bar-striped' />
+     </div>
     </div>
   );
 };

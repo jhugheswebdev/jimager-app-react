@@ -1,4 +1,4 @@
-// Any JS in here is auto-ran for us
+
 
 // Import the React library
 import React, { Component } from 'react';
@@ -12,22 +12,18 @@ import ImageList from './components/image_list';
 class App extends Component {
   constructor(props) {
     super(props);
-
     this.state = { images: [] };
   }
 
 
   componentWillMount() {
-// Great place to load data
     axios.get('https://api.imgur.com/3/gallery/hot/viral/0')
-      .then(response => this.setState({ images: response.data.data }));
-      // Never Do This -
-      // this.state.images = [ {}, {} ];
+    .then(response => this.setState({ images: response.data.data }));
   }
   render() {
     return (
       <div>
-      <ImageList images={this.state.images}/>
+       <ImageList images={this.state.images}/>
       </div>
     );
   }
